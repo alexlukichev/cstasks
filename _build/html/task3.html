@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Игра &mdash; документация Задачи </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Пятью пять – двадцать пять!" href="task2.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Задачи
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="task1.html">Сумма</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task2.html">Пятью пять – двадцать пять!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Игра</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Входные данные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Выходные данные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Примеры</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Задачи</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Игра</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/task3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Игра<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>В свободное время одноклассники Вася и Петя любят играть в различные логические игры: морской бой, крестики-нолики, шахматы,
+шашки и многое другое. Ребята уже испробовали и поиграли во всевозможные классические игры подобного рода, включая компьютерные.
+Однажды им захотелось сыграть во что-нибудь новое, но ничего подходящего найти не удалось.
+Тогда Петя придумал следующую игру «Угадайка»: играют двое участников. Первый загадывает любое трехзначное число, такое что первая
+и последняя цифры отличаются друг от друга более чем на единицу. Далее загадавший число игрок переворачивает загаданное число, меняя
+первую и последнюю цифры местами, таким образом получая еще одно число. Затем из максимального из полученных двух чисел вычитается
+минимальное. Задача второго игрока – угадать по первой цифре полученного в результате вычитания числа само это число.
+Например, если Вася загадал число 487, то перестановкой первой и последней цифры он получит число 784. После чего ему придется
+вычесть из 784 число 487, в результате чего получится число 297, которое и должен отгадать Петя по указанной первой цифре «2»,
+взятой из этого числа. Петя успевает лучше Васи по математике, поэтому практически всегда выигрывает в играх такого типа.
+Но в данном случае Петя схитрил и специально придумал такую игру, в которой он не проиграет Васе в любом случае. Дело в том, что
+придуманная Петей игра имеет выигрышную стратегию, которая заключается в следующем: искомое число всегда является трехзначным и
+вторая его цифра всегда равна девяти, а для получения значения последней достаточно отнять от девяти первую, т.е. в рассмотренном
+выше случае последняя цифра равна 9-2=7. Помогите Пете еще упростить процесс отгадывания числа по заданной его первой цифре,
+написав соответствующую программу.</p>
+<div class="section" id="id2">
+<h2>Входные данные<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В единственной строке входного файла <cite>input.txt</cite> задана единственная цифра <cite>К</cite>, соответствующая первой цифре полученного
+Васей в результате вычитания наименьшего загаданного Васей значения из наибольшего.</p>
+</div>
+<div class="section" id="id3">
+<h2>Выходные данные<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В выходной файл <cite>output.txt</cite> нужно вывести значение полученной Васей разности.</p>
+</div>
+<div class="section" id="id4">
+<h2>Примеры<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 41%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>INPUT.TXT</p></th>
+<th class="head"><p>OUTPUT.TXT</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>5</p></td>
+<td><p>594</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>297</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>7</p></td>
+<td><p>792</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>На самом деле мы уже из условия задачи знаем две первых цифры искомой
+разности. Осталось только вычислить третью по формуле <cite>L=9-K</cite>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Получить из трех цифр трехзначное число очень просто:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="go">123</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">K</span><span class="o">=</span><span class="mi">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">L</span><span class="o">=</span><span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">K</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">9</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="n">L</span>
+<span class="go">792</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="task2.html" class="btn btn-neutral" title="Пятью пять – двадцать пять!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Разные авторы
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
