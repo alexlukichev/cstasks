@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Задачи по программированию &mdash; документация Задачи </title>
+  <title>Спирт &mdash; документация Задачи </title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Алфавитный указатель" href="genindex.html" />
     <link rel="search" title="Поиск" href="search.html" />
-    <link rel="next" title="Сумма" href="task1.html" /> 
+    <link rel="prev" title="Игра" href="task3.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -47,7 +47,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Задачи
+            <a href="index.html" class="icon icon-home"> Задачи
           
 
           
@@ -78,11 +78,16 @@
             
             
               <p class="caption"><span class="caption-text">Содержание:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="task1.html">Сумма</a></li>
 <li class="toctree-l1"><a class="reference internal" href="task2.html">Пятью пять – двадцать пять!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="task3.html">Игра</a></li>
-<li class="toctree-l1"><a class="reference internal" href="task4.html">Спирт</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Спирт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Входные данные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Выходные данные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Примеры</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -97,7 +102,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Задачи</a>
+          <a href="index.html">Задачи</a>
         
       </nav>
 
@@ -126,15 +131,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Задачи по программированию</li>
+      <li>Спирт</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/task4.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -148,15 +153,50 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>Задачи по программированию<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Содержание:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="task1.html">Сумма</a></li>
-<li class="toctree-l1"><a class="reference internal" href="task2.html">Пятью пять – двадцать пять!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="task3.html">Игра</a></li>
-<li class="toctree-l1"><a class="reference internal" href="task4.html">Спирт</a></li>
-</ul>
+<h1>Спирт<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Каждому школьнику из курса органической химии известна формула молекулы этилового спирта – C<sub>2</sub>H<sub>5</sub>(OH).
+Откуда видно, что молекула спирта состоит из двух атомов углерода (C), шести атомов водорода (H) и одного атома кислорода (O).</p>
+<p>По заданному количеству атомов каждого из описанных выше элементов требуется определить максимально возможное
+количество молекул спирта, которые могут образоваться в процессе их соединения.</p>
+<div class="section" id="id2">
+<h2>Входные данные<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Первая строка входного файла <code class="docutils literal notranslate"><span class="pre">input.txt</span></code> содержит 3 натуральных числа: C, Н и O – количество атомов углерода,
+водорода и кислорода соответственно. Все числа разделены пробелом и не превосходят 1018.</p>
+</div>
+<div class="section" id="id3">
+<h2>Выходные данные<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В выходной файл <code class="docutils literal notranslate"><span class="pre">output.txt</span></code> выведите максимально возможное число молекул спирта, которые могут получиться из атомов,
+представленных во входных данных.</p>
+</div>
+<div class="section" id="id4">
+<h2>Примеры<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 41%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>input.txt</p></th>
+<th class="head"><p>output.txt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2 6 1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>10 5 12</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>18 35 3</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -168,8 +208,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="task1.html" class="btn btn-neutral float-right" title="Сумма" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="task3.html" class="btn btn-neutral" title="Игра" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
